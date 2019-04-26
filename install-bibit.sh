@@ -1,5 +1,5 @@
 echo "Install everything (pacman)"
-sudo pacman -Syyu --noconfirm git mecurial curl wget tree sc cmus espeak cowsay youtube-dl yaourt tmux zsh powerline-fonts neovim nodejs npm python ruby rubygems go php g++ qterminal gimp inkscape blender code telegram-desktop xfce4-screenshooter texlive-bin texlive-core texlive-fontsextra texlive-formatsextra texlive-bibtexextra typescript eslint python-jedi mesa mesa-demos jdk-openjdk jre-openjdk jre-openjdk-headless jdk8-openjdk jre8-openjdk scala scala-docs docker docker-compose minikube virtualbox arduino
+sudo pacman -Syyu --noconfirm git mecurial curl wget tree sc cmus espeak cowsay youtube-dl yaourt tmux zsh powerline-fonts neovim nodejs npm python ruby rubygems go php g++ qterminal gimp inkscape blender code telegram-desktop xfce4-screenshooter texlive-bin texlive-core texlive-fontsextra texlive-formatsextra texlive-bibtexextra typescript eslint python-jedi mesa mesa-demos jdk-openjdk jre-openjdk jre-openjdk-headless jdk8-openjdk jre8-openjdk scala scala-docs docker docker-compose minikube virtualbox arduino openvpn networkmanager-openvpn wireshark-qt nmap steam
 
 echo "Install everything (yaourt)"
 yaourt -Syu --noconfirm ruby-neovim python-neovim nodejs-neovim anaconda spotify slack-desktop brave-bin ulauncher tslint
