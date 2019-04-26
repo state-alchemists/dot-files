@@ -116,4 +116,5 @@ alias mkgrub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 # clear journalctl
 alias clear-journalctl="journalctl --vacuum-size=500M"
 # unlock session
-alias unlock-session="sudo -i loginctl list-sessions && echo 'Run `sudo -i loginctl unlock-session [SESSION]` to unlock'"
+alias show-session="sudo -i loginctl list-sessions"
+alias unlock-session="sudo -i loginctl unlock-session"
