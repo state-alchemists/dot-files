@@ -6,7 +6,7 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -97,11 +97,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias rmux="~/.rmux.sh"
-alias anaconda="source /opt/anaconda/bin/activate root"
-alias start-docker="sudo systemctl start docker"
-alias stop-docker="sudo systemctl stop docker"
-alias clear-swap="sudo swapoff -a && sudo swapon -a"
+# nvim is the best
 alias vi="nvim"
 alias vim="nvim"
+alias nano="nvim"
+# like tmux, but with session
+alias rmux="~/.rmux.sh"
+# activate anaconda
+alias anaconda="source /opt/anaconda/bin/activate root"
+# start docker service
+alias start-docker-service="sudo systemctl start docker"
+# stop docker service
+alias stop-docker-service="sudo systemctl stop docker"
+# clear swap
+alias clear-swap="sudo swapoff -a && sudo swapon -a"
+# recreate grub
 alias mkgrub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+# clear journalctl
+alias clear-journalctl="journalctl --vacuum-size=500M"
+# unlock session
+alias unlock-session="sudo -i loginctl list-sessions && echo 'Run `sudo -i loginctl unlock-session [SESSION]` to unlock'"

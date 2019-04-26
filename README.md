@@ -20,7 +20,7 @@ If your acpi doesn't work, try to edit `/etc/default/grub`, update `GRUB_CMDLINE
 * `GRUB_CMDLINE_LINUX_DEFAULT="irqpoll noapic noacpi pcie_aspm=off rw"`
 * `GRUB_CMDLINE_LINUX_DEFAULT="iommu=pt ivrs_ioapic[4]=00:14.0 ivrs_ioapic[5]=00:00.2 acpi_backlight=vendor idle=nomwait fsck.mode=skip pci=nommconf"`
 
-The parameter is optimal for Acer Aspire 3 A315-41-R9D3
+The second options work better for Acer Aspire 3 A315-41-R9D3. After editing the grub file, you have to invoke `sudo grub-mkconfig -o /boot/grub/grub.cfg`
 
 ## Use caps lock as escape
 
